@@ -5,3 +5,4 @@ pydantic
 aiogram
 jinja2
 python-dotenv
+python-multipart
