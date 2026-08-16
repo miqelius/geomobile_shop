@@ -119,10 +119,32 @@
       padding: 20px;
       border-radius: var(--radius);
       transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .service-card:hover { border-color: var(--primary); }
     .service-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: #fff; }
-    .service-desc { font-size: 13px; color: #999; }
+    .service-desc { font-size: 13px; color: #999; margin-bottom: 12px; }
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #1f1f1f;
+      padding-top: 10px;
+      margin-top: auto;
+    }
+    .service-phone { font-size: 13px; font-weight: 700; color: var(--primary); }
+    .whatsapp-btn {
+      background: #25d366;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: var(--transition);
+    }
+    .whatsapp-btn:hover { background: #20ba5a; }
 
     /* FILTERS */
     .filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
@@ -229,30 +251,115 @@
     <span class="ge">სერვისები</span><span class="en">Services</span><span class="ru">Услуги</span>
   </h2>
   <div class="services-grid">
+
+    <!-- Web Development -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">თარგმნა და ნოტარიუსი</span><span class="en">Translation & Notary</span><span class="ru">Перевод и нотариус</span></div>
-      <div class="service-desc"><span class="ge">დოკუმენტების თარგმნა და დამოწმება.</span><span class="en">Document translation & notarization.</span><span class="ru">Перевод и заверение документов.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">ვებგვერდების დამზადება</span><span class="en">Web Development</span><span class="ru">Веб-разработка</span></div>
+        <div class="service-desc"><span class="ge">თანამედროვე ციფრული გადაწყვეტილებები.</span><span class="en">Modern digital solutions.</span><span class="ru">Современные цифровые решения.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 592 078 078</span>
+        <a href="https://wa.me/995592078078" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- Real Estate Agent -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">მობილურების შეკეთება</span><span class="en">Mobile Repair</span><span class="ru">Ремонт телефонов</span></div>
-      <div class="service-desc"><span class="ge">დიაგნოსტიკა და სარემონტო სამუშაოები.</span><span class="en">Diagnostics and repair works.</span><span class="ru">Диагностика и ремонтные работы.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">უძრავი ქონების აგენტი</span><span class="en">Real Estate Agent</span><span class="ru">Агент по недвижимости</span></div>
+        <div class="service-desc"><span class="ge">ბინების ყიდვა, გაყიდვა და ქირაობა.</span><span class="en">Apartment buy, sell & rent.</span><span class="ru">Покупка, продажа и аренда квартир.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 597 70 88 84</span>
+        <a href="https://wa.me/995597708884" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- T-Shirt & Mug Printing (Yelow Print) -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">ოპერაციული სისტემები</span><span class="en">OS Setup</span><span class="ru">Установка ОС</span></div>
-      <div class="service-desc"><span class="ge">პროგრამული უზრუნველყოფა და გამართვა.</span><span class="en">Software installation and setup.</span><span class="ru">Установка ПО и настройка.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">ბეჭდვა მაისურებზე და ჭიქებზე (Yelow Print)</span><span class="en">T-Shirt & Mug Printing (Yelow Print)</span><span class="ru">Печать на футболках и кружках (Yelow Print)</span></div>
+        <div class="service-desc"><span class="ge">თქვენი ფოტოები მაისურებსა და ჭიქებზე.</span><span class="en">Your photos on t-shirts and mugs.</span><span class="ru">Ваши фото на футболках и кружках.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- Advertising Services -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">კარტრიჯები და პრინტერები</span><span class="en">Cartridges & Printers</span><span class="ru">Картриджи и принтеры</span></div>
-      <div class="service-desc"><span class="ge">დატენვა, აღდგენა და შეკეთება.</span><span class="en">Refilling, restoration & repair.</span><span class="ru">Заправка, восстановление и ремонт.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">სარეკლამო მომსახურება</span><span class="en">Advertising Services</span><span class="ru">Рекламные услуги</span></div>
+        <div class="service-desc"><span class="ge">ეფექტური სარეკლამო კამპანიები და ბრენდინგი.</span><span class="en">Effective ad campaigns & branding.</span><span class="ru">Эффективные рекламные кампании и брендинг.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- Translation & Notary -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">ფოტოების ბეჭდვა</span><span class="en">Photo Printing</span><span class="ru">Печать фото</span></div>
-      <div class="service-desc"><span class="ge">მაღალი ხარისხის ბეჭდვის სერვისი.</span><span class="en">High-quality printing service.</span><span class="ru">Услуга высококачественной печати.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">თარგმნა და ნოტარიუსი</span><span class="en">Translation & Notary</span><span class="ru">Перевод и нотариус</span></div>
+        <div class="service-desc"><span class="ge">დოკუმენტების თარგმნა და დამოწმება.</span><span class="en">Document translation & notarization.</span><span class="ru">Перевод и заверение документов.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- Mobile Repair -->
     <div class="service-card">
-      <div class="service-title"><span class="ge">ვებგვერდების დამზადება</span><span class="en">Web Development</span><span class="ru">Веб-разработка</span></div>
-      <div class="service-desc"><span class="ge">თანამედროვე ციფრული გადაწყვეტილებები.</span><span class="en">Modern digital solutions.</span><span class="ru">Современные цифровые решения.</span></div>
+      <div>
+        <div class="service-title"><span class="ge">მობილურების შეკეთება</span><span class="en">Mobile Repair</span><span class="ru">Ремонт телефонов</span></div>
+        <div class="service-desc"><span class="ge">დიაგნოსტიკა და სარემონტო სამუშაოები.</span><span class="en">Diagnostics and repair works.</span><span class="ru">Диагностика и ремонтные работы.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
     </div>
+
+    <!-- OS Setup -->
+    <div class="service-card">
+      <div>
+        <div class="service-title"><span class="ge">ოპერაციული სისტემები</span><span class="en">OS Setup</span><span class="ru">Установка ОС</span></div>
+        <div class="service-desc"><span class="ge">პროგრამული უზრუნველყოფა და გამართვა.</span><span class="en">Software installation and setup.</span><span class="ru">Установка ПО и настройка.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Cartridges & Printers -->
+    <div class="service-card">
+      <div>
+        <div class="service-title"><span class="ge">კარტრიჯები და პრინტერები</span><span class="en">Cartridges & Printers</span><span class="ru">Картриджи и принтеры</span></div>
+        <div class="service-desc"><span class="ge">დატენვა, აღდგენა და შეკეთება.</span><span class="en">Refilling, restoration & repair.</span><span class="ru">Заправка, восстановление и ремонт.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Photo Printing -->
+    <div class="service-card">
+      <div>
+        <div class="service-title"><span class="ge">ფოტოების ბეჭდვა</span><span class="en">Photo Printing</span><span class="ru">Печать фото</span></div>
+        <div class="service-desc"><span class="ge">მაღალი ხარისხის ბეჭდვის სერვისი.</span><span class="en">High-quality printing service.</span><span class="ru">Услуга высококачественной печати.</span></div>
+      </div>
+      <div class="service-footer">
+        <span class="service-phone">+995 574 13 33 64</span>
+        <a href="https://wa.me/995574133364" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- STORE -->
@@ -323,7 +430,7 @@
     <span class="ge">ჯამი:</span><span class="en">Total:</span><span class="ru">Итого:</span>
     <span id="cartTotal">0</span> ₾
   </div>
-  <a href="tel:+995592078078" class="checkout-btn">
+  <a href="tel:+995574133364" class="checkout-btn">
     <span class="ge">დარეკვა / შეკვეთა</span><span class="en">Call / Order</span><span class="ru">Позвонить / Заказать</span>
   </a>
 </div>
@@ -362,7 +469,7 @@
     const c = document.getElementById('cartItems');
     const badge = document.getElementById('cartBadge');
     let total = 0;
-    c.innerHTML = cart.length === 0 ? '<div style="text-align:center;color:#66;margin-top:20px;font-size:13px;">ცარიელია</div>' : '';
+    c.innerHTML = cart.length === 0 ? '<div style="text-align:center;color:#666;margin-top:20px;font-size:13px;">ცარიელია</div>' : '';
     cart.forEach((item, index) => {
       total += item.price;
       c.innerHTML += `<div class="cart-item"><span style="font-size:14px;font-weight:600;">${item.name}</span><div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--primary);font-weight:700;">${item.price} ₾</span><button onclick="removeFromCart(${index})" style="color:#e74c3c;font-weight:700;">✕</button></div></div>`;
