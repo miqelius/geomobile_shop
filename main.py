@@ -52,7 +52,8 @@ seed_database()
 @app.get("/", response_class=HTMLResponse)
 def read_root(request: Request, db: Session = Depends(get_db)):
     products = db.query(ProductDB).all()
-    return templates.TemplateResponse("index.html", {"request": request, "products": products})
+    # გასწორდა: request გადადის პირველ პოზიციაზე
+    return templates.TemplateResponse(request, "index.html", {"products": products})
 
 # პროდუქტის შეძენა (მარაგის შემცირება 1-ით)
 @app.post("/buy/{product_id}")
@@ -67,7 +68,8 @@ def buy_product(product_id: int, db: Session = Depends(get_db)):
 @app.get("/admin", response_class=HTMLResponse)
 def admin_panel(request: Request, username: str = Depends(verify_admin), db: Session = Depends(get_db)):
     products = db.query(ProductDB).all()
-    return templates.TemplateResponse("admin.html", {"request": request, "products": products})
+    # გასწორდა: request გადადის პირველ პოზიციაზე
+    return templates.TemplateResponse(request, "admin.html", {"products": products})
 
 # დაცული პროდუქტის დამატება
 @app.post("/admin/add")
